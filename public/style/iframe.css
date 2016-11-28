@@ -1,0 +1,5 @@
+/* tournament chart */
+body.small-module-ad #bottom_bar{
+    height: 0px!important;
+    width: 0px!important;
+}

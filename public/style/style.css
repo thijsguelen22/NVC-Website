@@ -1,0 +1,571 @@
+/* General style start */
+
+@font-face {
+    font-family: 'DistrictThin';
+    src: url('../font/distproth-webfont.eot');
+    src: url('../font/distproth-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/distproth-webfont.woff2') format('woff2'),
+         url('../font/distproth-webfont.woff') format('woff'),
+         url('../font/distproth-webfont.ttf') format('truetype'),
+         url('../font/distproth-webfont.svg#district_prothin') format('svg');
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "DistrictThin", helvetica;
+    font-weight: normal;
+    background: url("../images/background5.jpg");
+}   
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "DistrictThin";
+    font-weight: normal;
+    
+}
+
+h1 {
+    font-size: 50px;
+    color: #efefef;
+}
+
+h2 {
+    margin-bottom: 22px;
+    display: inline-block;
+    width: 80%;
+    font-size: 40px;
+    color: rgb(221, 221, 221);
+    font-weight: bold;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.46);
+}
+
+h3 {
+    font-size: 30px;
+    color: rgb(221, 221, 221);
+    margin: 0px 0px 10px 0px;
+}
+
+select  {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url("../images/select_arrow.png")no-repeat right center;
+    border: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.registrationtable {
+    display: inline-block;
+}
+
+input,
+button {
+    width: 220px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+}
+
+input[type="radio"] {
+    width: 0px !important;
+}
+
+input:focus,
+button:focus,
+.nextbutton:focus {
+    background: #F2DEFF;
+    outline: none;
+    box-shadow: #4E0E78 0px 0px 5px 1px;
+}
+
+input[type="submit"],
+button {
+    width: 320px;
+    background: rgb(56, 33, 74);
+    margin: 0;
+    font-size: 20px;
+    color: whitesmoke;
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover,
+.nextbutton:hover {
+    background: rgb(84, 41, 104) !important;
+}
+
+.nextbutton {
+    width: 220px !important;
+    padding: 20px !important;
+    background: rgb(56, 33, 74) !important;
+    font-size: 20px !important;
+    font-family: arial;
+    color: whitesmoke;
+    border-radius: 5px !important;
+    cursor: pointer;
+    margin: 0px 20px;
+}
+
+.icon-large,
+.icon-large-left {
+    width: 20px;
+    height: 20px;
+    background: url("../images/arrows.svg");
+    background-size: cover;
+    float: right;
+}
+
+.icon-large-left {
+    float: left !important;
+
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+label > input {
+    visibility: hidden;
+}
+
+#registration2 {
+    position: relative;
+    top: -60px;
+}
+
+.ticket {
+    height: 340px;
+    width: 260px;
+    margin: 0px 20px 50px 20px;
+    background: #1c1c1c;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ticket img {
+    display: inline-block;
+    width: 80px;
+    margin: 10px auto;
+}
+
+.ticketinfo {
+    width: 240px;
+    border-top: 1px solid whitesmoke;
+    padding: 10px;
+    font-size: 20px;
+    word-wrap: break-word;
+    color: whitesmoke;
+}
+
+label > input[type="radio"]:checked + .ticket {
+    box-shadow: #2b002c 0px 0px 10px;
+
+
+    background-color: #1c091d;
+    -webkit-transition: background-color 150ms linear;
+    -moz-transition: background-color 150ms linear;
+    -o-transition: background-color 150ms linear;
+    -ms-transition: background-color 150ms linear;
+    transition: background-color 200ms linear;
+}
+
+.submitregistration {
+    width: 300px !important;
+    border-radius: 4px !important;
+}
+
+.registration-background {
+    background: none !important;
+    height: 1000px !important;
+}
+
+textarea{
+    width: 220px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 0px;
+}
+
+textarea:focus{
+    background: #F2DEFF;
+    outline: none;
+    box-shadow: #4E0E78 0px 0px 5px 1px;
+}
+
+select option{
+    color: black;
+}
+select option:hover{
+    background-color: rgb(52, 32, 69);
+}
+
+/* General style end */
+
+/* Homepage style start */
+
+.gradient-layer {
+    height: 100%;
+    background: linear-gradient(120deg, rgb(32, 9, 52), rgba(0, 0, 0, 0.41));
+}
+.header {
+    text-align: center;
+    min-height: 500px;
+    height: 700px;   
+    width: 100%;
+    background: url("../images/background4.jpg");
+    background-size: cover;
+}
+
+.nav-bar {
+    display: inline-block;
+    margin: 20px 0px;
+    min-height: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.nav-bar img {
+    float: left;
+    margin: 20px 40px;
+    width: 200px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 35px 0px;
+    overflow: hidden;
+}
+
+.nav-bar li {
+    float: left;
+    padding: 20px;
+    margin: 0px 5px;
+    border-radius: 2px;
+    color: #efefef !important;
+}  
+
+.nav-bar li:hover {
+    background-color: rgba(52, 32, 69, 0.7);
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;  
+}
+
+.nav-bar-active{
+    background-color: rgba(52, 32, 69, 0.7);
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;  
+}
+
+.contact,
+.login {
+    float: right !important; 
+    margin-right: 50px !important;
+}
+
+.title-info h1 {
+    font-size:60px;
+    margin: 0;
+    text-align: left;
+}
+
+.title-info p {
+    color: #efefef;
+    font-size: 22px;
+    text-align: left;
+}
+
+.title-info {
+    margin: 50px 70px 0px 70px;
+    float: left;
+    font-size: 25px;
+    width: 500px;
+}
+
+.header-content {
+    display: inline-block;
+    margin: 0px auto; 
+}
+
+.quicklogin {
+    position: relative;
+    margin: 0px 70px 0px 100px;
+    float: left;
+    width: 320px;
+    height: 365px;
+    background: #1c1c1c;
+    z-index: 0;
+    box-shadow: 0px 1px 5px 0px;
+    border-radius: 3px;
+}
+
+.login {
+    border: 1px solid whitesmoke !important;
+}
+
+.login:hover {
+    border: 1px solid rgba(0,0,0,0);
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -10%, 0);
+    transform: translate3d(0, -10%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+.active {
+    margin: 0px 150px;
+}
+
+.loginlist {
+    background: #1c1c1c; 
+    margin: 0 auto;
+    width:  300px;
+    height: 230px;
+}
+
+.loginlist table {
+    font-weight: bolder; !important
+    width: 100%;   !important
+}
+
+
+.clear {
+    clear: both;
+}
+
+.infoicon {
+    margin: 0px 4px;
+    vertical-align: middle;
+}
+
+.regularinfo {
+    background: red;
+    width: 200px;
+    height: 200px;
+    display: none;   
+}
+
+/* Homepage style end */
+
+/* Competitionpage style start */
+
+.header-comp {
+    min-height: 100vh;   
+    width: 100%;
+    background: url("../images/background3.jpg") fixed;
+    background-size: cover;
+}
+
+.title-info-comp h1 {
+    width: 350px;
+    margin: 0;
+}
+
+main{
+  display:flex;
+  flex-direction:row;
+}
+
+.round{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:200px;
+    list-style:none;
+    padding:0;
+    color: white;
+}
+    .round .spacer{ flex-grow:2; }
+    .round .spacer:first-child,
+    .round .spacer:last-child{ flex-grow:.5; }
+
+    .round .game-spacer{
+    flex-grow:3;
+}
+
+li.game{
+    padding-left:20px;
+}
+
+li.game span{
+    float:right;
+    margin-right:5px;
+  }
+
+li.game-top{ border-top:1px solid #aaa; }
+
+li.game-spacer{ 
+    border-right:1px solid #aaa;
+    min-height:40px;
+  }
+
+li.game-bottom{ 
+    border-bottom:1px solid #aaa;
+  }
+
+/* Competitionpage style end */
+
+/* Footer style start */
+
+.footer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background: #0e0a14;
+    z-index: 1;
+}
+
+.footer-content {
+    height: 150px;
+    display: inline-block;
+    margin: 0px auto;
+}
+
+.footer-contentblock {
+    margin: 20px;
+    float: left;
+    width: 200px;
+    height: 50px;
+}
+
+.footer-contentblock img {
+    width: 100px;
+    margin: 5px;   
+}
+
+.socialmedia img {
+    margin: 20px 5px;
+    width: 50px !important;   
+}
+
+.sponsor img {
+    margin: 10px 5px;
+}
+
+.copyright {
+    color: #efefef;
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.copyright a:hover { 
+    color: rgb(108, 71, 139);
+    
+    -webkit-transition: color 180ms linear;
+    -moz-transition: color 180ms linear;
+    -o-transition: color 180ms linear;
+    -ms-transition: color 180ms linear;
+    transition: color 180ms linear;  
+}
+
+.usualgames {
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(239, 239, 239, 0.4); 
+    border-top: 1px solid rgba(239, 239, 239, 0.4);
+    height: 50px;
+    width: 75%;
+    padding: 10px;
+}
+
+.usualgames img {
+    margin: 0px 30px !important;
+    width: 100px !important;
+}
+
+/* Footer style end */
+
+/* Ticket style start */
+
+
+.header-tickets {
+    text-align: center;
+    height: 900px;   
+    width: 100%;
+    background: url("../images/background4.jpg");
+    background-size: cover;
+}
+
+.ticket-content {
+    min-height: 400px;   
+}
+
